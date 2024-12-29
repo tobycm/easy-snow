@@ -17,9 +17,7 @@
 
     <p>just add this css to your website:</p>
 
-    <pre>
-        <code>
-@keyframes snow {
+    <pre><code>@keyframes snow {
   0% {
     transform: translateY(0);
   }
@@ -52,15 +50,11 @@
 
 .snow4 {
   animation: snow 4s linear infinite;
-}
-        </code>
-    </pre>
+}</code></pre>
 
     <p>and add this js to your website:</p>
 
-    <pre>
-        <code>
-setInterval(() => {
+    <pre><code>setInterval(() => {
   const snow = document.createElement("div");
 
   const size = Math.max(4, Math.ceil(Math.random() * 30) - 9);
@@ -86,21 +80,14 @@ setInterval(() => {
   setTimeout(() => {
     snow.remove();
   }, [10, 8, 6, 4][lifeSpan] * 1000);
-}, 200);
-        </code>
-    </pre>
+}, 200);</code></pre>
 
     <p>and you're done!!</p>
 
     <p>alternatively, you can also import the css and js file in your &lt;head&gt;:</p>
 
-    <pre>
-        <code>
-&lt;link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" /&gt;
-&lt;script src="https://tobycm.github.io/easy-snow/snow.js"&gt;&lt;/script&gt;
-
-        </code>
-    </pre>
+    <pre><code>&lt;link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" /&gt;
+&lt;script src="https://tobycm.github.io/easy-snow/snow.js"&gt;&lt;/script&gt;</code></pre>
 
     <br />
 
