@@ -1,0 +1,34 @@
+@keyframes snow {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.snow {
+  position: fixed;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.snow1 {
+  animation: snow 10s linear infinite;
+}
+
+.snow2 {
+  animation: snow 8s linear infinite;
+}
+
+.snow3 {
+  animation: snow 6s linear infinite;
+}
+
+.snow4 {
+  animation: snow 4s linear infinite;
+}
