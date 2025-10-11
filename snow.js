@@ -1,4 +1,6 @@
 setInterval(() => {
+  if (!document.christmas) return;
+
   const snow = document.createElement("div");
 
   const size = Math.max(4, Math.ceil(Math.random() * 30) - 9);
@@ -21,10 +23,7 @@ setInterval(() => {
   document.body.appendChild(snow);
 
   // snow truck
-  setTimeout(
-    () => {
-      snow.remove();
-    },
-    [10, 8, 6, 4][lifeSpan] * 1000,
-  );
+  setTimeout(() => {
+    snow.remove();
+  }, [10, 8, 6, 4][lifeSpan] * 1000);
 }, 200);
