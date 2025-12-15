@@ -1,9 +1,7 @@
 setInterval(() => {
   if (!document.christmas) return;
 
-  const isReduced =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-
+  const isReduced = window.matchMedia("(prefers-reduced-motion)").matches;
   if (isReduced) return;
 
   const snow = document.createElement("div");
