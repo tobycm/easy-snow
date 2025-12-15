@@ -1,6 +1,11 @@
 setInterval(() => {
   if (!document.christmas) return;
 
+  const isReduced =
+    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+  if (isReduced) return;
+
   const snow = document.createElement("div");
 
   const size = Math.max(4, Math.ceil(Math.random() * 30) - 9);
